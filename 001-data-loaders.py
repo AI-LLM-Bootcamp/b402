@@ -69,7 +69,9 @@ print("\n----------\n")
 
 from langchain_community.document_loaders import WikipediaLoader
 
-loader = WikipediaLoader('query=name, load_max_docs=1')
+name="JFK"
+
+loader = WikipediaLoader(query=name, load_max_docs=1)
 
 loaded_data = loader.load()[0].page_content
 
@@ -82,7 +84,6 @@ chat_template = ChatPromptTemplate.from_messages(
 )
 
 messages = chat_template.format_messages(
-    name="JFK",
     question="Where was JFK born?",
     context=loaded_data
 )
