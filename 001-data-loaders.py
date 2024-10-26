@@ -84,7 +84,7 @@ chat_template = ChatPromptTemplate.from_messages(
 )
 
 messages = chat_template.format_messages(
-    question="Where was JFK born?",
+    question="What was the full name of JFK?",
     context=loaded_data
 )
 
