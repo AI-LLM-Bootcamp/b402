@@ -92,7 +92,7 @@ response = chatModel.invoke(messages)
 
 print("\n----------\n")
 
-print("Respond from Wikipedia: Where was JFK born?")
+print("Respond from Wikipedia: What was the full name of JFK?")
 
 print("\n----------\n")
 #print(response.content)
